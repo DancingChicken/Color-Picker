@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XR8-RK-ti6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Color Picker View Controller-->
+        <scene sceneID="uNR-am-yuo">
+            <objects>
+                <viewController id="XR8-RK-ti6" customClass="ColorPickerViewController" customModule="ColorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVD-Iq-Ajs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-Hn-SwW">
+                                <rect key="frame" x="166" y="261" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVi-1h-0O2">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XR8-RK-ti6" id="GOg-Xp-3P4"/>
+                                    <outlet property="delegate" destination="XR8-RK-ti6" id="cdE-AY-McM"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dVi-1h-0O2" firstAttribute="leading" secondItem="5uW-y6-ZUx" secondAttribute="leading" id="RNW-xH-OeZ"/>
+                            <constraint firstItem="dVi-1h-0O2" firstAttribute="trailing" secondItem="5uW-y6-ZUx" secondAttribute="trailing" id="Voh-h2-YST"/>
+                            <constraint firstItem="5uW-y6-ZUx" firstAttribute="bottom" secondItem="dVi-1h-0O2" secondAttribute="bottom" id="gQ5-FJ-TAq"/>
+                            <constraint firstItem="dVi-1h-0O2" firstAttribute="bottom" secondItem="5uW-y6-ZUx" secondAttribute="bottom" id="pgj-DT-Bdl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5uW-y6-ZUx"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="PcI-Hn-SwW" id="V6P-Y0-Q9Z"/>
+                        <outlet property="colorPickerView" destination="dVi-1h-0O2" id="Upf-bL-TqE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh7-c7-CxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="59"/>
+        </scene>
+    </scenes>
 </document>

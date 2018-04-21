@@ -13,6 +13,7 @@
 		E3AA97A1208AC36300513EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AA979F208AC36300513EA3 /* LaunchScreen.storyboard */; };
 		E3AA97AC208AC36300513EA3 /* ColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA97AB208AC36300513EA3 /* ColorPickerTests.swift */; };
 		E3AA97B7208AC36300513EA3 /* ColorPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA97B6208AC36300513EA3 /* ColorPickerUITests.swift */; };
+		E3AA97C5208AC86500513EA3 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA97C4208AC86500513EA3 /* ColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E3AA97B2208AC36300513EA3 /* ColorPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AA97B6208AC36300513EA3 /* ColorPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerUITests.swift; sourceTree = "<group>"; };
 		E3AA97B8208AC36300513EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3AA97C4208AC86500513EA3 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				E3AA979D208AC36300513EA3 /* Assets.xcassets */,
 				E3AA979F208AC36300513EA3 /* LaunchScreen.storyboard */,
 				E3AA97A2208AC36300513EA3 /* Info.plist */,
+				E3AA97C4208AC86500513EA3 /* ColorPickerViewController.swift */,
 			);
 			path = ColorPicker;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AA97C5208AC86500513EA3 /* ColorPickerViewController.swift in Sources */,
 				E3AA9797208AC35E00513EA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
